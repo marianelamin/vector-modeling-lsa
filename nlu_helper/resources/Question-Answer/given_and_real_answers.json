@@ -1,0 +1,118 @@
+[
+    {
+      "question": "Where does breast cancer begin?",
+      "answer" : "Cancer begins in the cells.",
+      "possible_answers": [
+        "at home",
+        "home 2020 maybe $190,900.45",
+        "breast",
+        "in the breast",
+        "this wont work if there are stop words",
+        "it begins in the head",
+        "it begins in the cell",
+        "starts in cells"
+      ]
+    },
+    {
+      "question" : "What is cancer?",
+      "answer": "Cancer begins when the cells change and grow into a malignant tumor.",
+      "possible_answers": [
+        "it is a tumor",
+        "it is a malignant tumor",
+        "it is a bad tumor",
+        "it is a bad tumor that can spread throughout the body if not treated"
+      ]
+    },
+    {
+      "question" : "What is a malignant tumor?",
+      "answer" : "A tumor is a solid mass of tissue, or cells, which grows out of control.",
+      "possible_answers": [],
+    },
+    {
+      "question" : "What happens if a malignant tumor is not removed?",
+      "answer" : "If not removed or treated, cancer can spread to other parts of the body and become lethal.",
+      "possible_answers": [
+        "who knows",
+        "I can be a blood donor"
+      ]
+    },
+    {
+        "question" : "Is breast cancer deadly?",
+        "answer" : "For the majority of women, breast cancer is not a death sentence.",
+        "possible_answers": [
+          "yes",
+          "breast cancer can kill you"
+        ]
+    },
+    {
+        "question" : "What is the breast cancer survival rate?",
+        "answer" : "If the cancer has not spread to other organs, the 5-year survival rate is 90%.",
+        "possible_answers": [
+          "nighty percent rate",
+          "90% rate"
+        ]
+    },
+    {
+      "question" : "What factors impact survival rate?",
+      "answer" : "Survival rate depends on many things, including how much the cancer has spread throughout the body, the woman’s overall health, and more.",
+      "possible_answers": []
+    },
+    {
+      "question": "what is breast cancer staging?",
+      "answer": "Staging is the process used to find out whether the cancer has spread within the breast or to other parts of the body.",
+      "possible_answers": [
+        "stage",
+        "spread",
+        "cancer has spread in the breast",
+        "process where cancer spreads around the entire body"
+      ]
+    },
+    {
+      "question": "What is the color of the house?",
+      "answer": "The house is green",
+      "possible_answers": [
+        "The green barn was painted",
+        "The grass is green",
+        "John bought a green coat in the Blue house",
+        "Designers like using the green color for in-house wear clothing"
+      ]
+    },
+      {
+      "question": "What is the color of the house?",
+      "answer": "The house is green",
+      "possible_answers": [
+          "I painted my home with the color green"
+      ]
+    },
+    {
+      "question": "several doctors operated",
+      "answer": "several doctors operated on a patient",
+      "possible_answers":[
+        "the surgery was done by many physicians"
+      ]
+    },
+    {
+      "question": "circle's diameter",
+      "answer": "a circle's diameter",
+      "possible_answers": [
+        "radius of sphere"
+      ]
+    },
+    {
+      "question": "circle's diameter",
+      "answer": "a circle's diameter",
+      "possible_answers": [
+        "music of spheres"
+      ]
+    },
+    {
+      "question": "",
+      "answer": "The coffee smells better in the morning",
+      "possible_answers": [
+        "in the morning, coffee smells better",
+        "the scent of coffee is better at night",
+        "the scent of the java is great early in the day",
+        "the scent of caffeine is great early in the day"
+      ]
+    }
+]

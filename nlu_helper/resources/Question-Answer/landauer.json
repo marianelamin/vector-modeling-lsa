@@ -1,0 +1,22 @@
+[
+  {
+    "answer": "Several doctors operated on a patient.",
+    "lp_id": "LP1",
+    "possible_answers": [
+      {
+        "id": "SP1",
+        "text": "The surgery was done by many physicians."
+      }
+    ]
+  },
+  {
+    "answer": "A circle's diameter.",
+    "lp_id": "LP2",
+    "possible_answers": [
+      {
+        "id": "SP1",
+        "text": "Music of the spheres."
+      }
+    ]
+  }
+]
