@@ -1,0 +1,342 @@
+2020-04-19 15:25:43,520  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:26:03,655  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 20.135378122329712 seconds to load
+2020-04-19 15:26:03,656  main  INFO: 135759 docs loaded!
+2020-04-19 15:26:03,659  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-docbyterm-tfidf-stop
+2020-04-19 15:26:03,659  main  INFO: Options are: {'action': 'docbyterm', 'min_document_frequency': 2, 'stopwords': True, 'score': 'tfidf', 'svd_components': 100, 'truncate_matrix': None, 'output': None}
+2020-04-19 15:26:03,659  main  DEBUG: Starting to execute the action: docbyterm
+2020-04-19 15:26:52,204  main  INFO: term by doc matrix took 48.54495596885681 seconds
+2020-04-19 15:26:52,222  main  DEBUG: starting to save files . . .
+2020-04-19 15:26:52,223  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:26:52,408  main  INFO: took 0.18539094924926758 seconds to store data using pickle
+2020-04-19 15:26:52,415  main  INFO: 69414 words in the model from 135759 documents
+2020-04-19 15:26:52,415  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  1 min,  8 seconds to complete
+2020-04-19 15:26:52,415  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:26:54,823  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:27:12,922  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 18.09961175918579 seconds to load
+2020-04-19 15:27:12,924  main  INFO: 135759 docs loaded!
+2020-04-19 15:27:12,927  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-lsa-dim100-tfidf-stop
+2020-04-19 15:27:12,927  main  INFO: Options are: {'action': 'lsa', 'min_document_frequency': 2, 'stopwords': True, 'score': 'tfidf', 'svd_components': 100, 'truncate_matrix': 1000, 'output': None}
+2020-04-19 15:27:12,927  main  DEBUG: Starting to execute the action: lsa
+2020-04-19 15:28:00,544  main  INFO: term by doc matrix took 47.6170608997345 seconds
+2020-04-19 15:28:23,095  main  INFO: 	fit_transform took 22.536524057388306 seconds, u_sigma contains 27.765712 MB
+2020-04-19 15:28:23,096  main  INFO: 	performing lsa - np.dot(u_sigma (69414, 100), vt(100, 1000)) . . . svd = 100
+2020-04-19 15:28:23,272  main  INFO: 	lsa = np.dot(u_s,vt) operation took 0.17632484436035156 seconds and lsa contains 277.656112 MB
+2020-04-19 15:28:23,278  main  INFO: 	lsa matrix calculation TruncatedSVD finished.
+2020-04-19 15:28:23,278  main  INFO: 	SVD TruncatedSVD took 22.719000101089478 seconds
+2020-04-19 15:28:23,278  main  INFO: 	size (69414, 1000)
+2020-04-19 15:28:23,285  main  DEBUG: starting to save files . . .
+2020-04-19 15:28:23,285  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:28:23,619  main  INFO: took 0.3336949348449707 seconds to store data using pickle
+2020-04-19 15:28:23,634  main  INFO: 69414 words in the model from 135759 documents
+2020-04-19 15:28:23,634  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  1 min,  28 seconds to complete
+2020-04-19 15:28:23,634  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:28:26,377  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:28:44,363  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 17.986047983169556 seconds to load
+2020-04-19 15:28:44,364  main  INFO: 135759 docs loaded!
+2020-04-19 15:28:44,367  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-lsa-dim300-tfidf-stop
+2020-04-19 15:28:44,367  main  INFO: Options are: {'action': 'lsa', 'min_document_frequency': 2, 'stopwords': True, 'score': 'tfidf', 'svd_components': 300, 'truncate_matrix': 1000, 'output': None}
+2020-04-19 15:28:44,367  main  DEBUG: Starting to execute the action: lsa
+2020-04-19 15:29:32,366  main  INFO: term by doc matrix took 47.99938988685608 seconds
+2020-04-19 15:30:50,351  main  INFO: 	fit_transform took 77.96946096420288 seconds, u_sigma contains 83.296912 MB
+2020-04-19 15:30:50,352  main  INFO: 	performing lsa - np.dot(u_sigma (69414, 300), vt(300, 1000)) . . . svd = 300
+2020-04-19 15:30:50,603  main  INFO: 	lsa = np.dot(u_s,vt) operation took 0.251629114151001 seconds and lsa contains 277.656112 MB
+2020-04-19 15:30:50,624  main  INFO: 	lsa matrix calculation TruncatedSVD finished.
+2020-04-19 15:30:50,624  main  INFO: 	SVD TruncatedSVD took 78.24171018600464 seconds
+2020-04-19 15:30:50,624  main  INFO: 	size (69414, 1000)
+2020-04-19 15:30:50,630  main  DEBUG: starting to save files . . .
+2020-04-19 15:30:50,630  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:30:50,956  main  INFO: took 0.32554006576538086 seconds to store data using pickle
+2020-04-19 15:30:50,971  main  INFO: 69414 words in the model from 135759 documents
+2020-04-19 15:30:50,971  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  2 min,  24 seconds to complete
+2020-04-19 15:30:50,971  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:30:53,858  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:31:11,547  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 17.688567876815796 seconds to load
+2020-04-19 15:31:11,548  main  INFO: 135759 docs loaded!
+2020-04-19 15:31:11,551  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-docbyterm-zeroone-stop
+2020-04-19 15:31:11,551  main  INFO: Options are: {'action': 'docbyterm', 'min_document_frequency': 2, 'stopwords': True, 'score': 'zeroone', 'svd_components': 100, 'truncate_matrix': None, 'output': None}
+2020-04-19 15:31:11,551  main  DEBUG: Starting to execute the action: docbyterm
+2020-04-19 15:31:59,439  main  INFO: term by doc matrix took 47.88742518424988 seconds
+2020-04-19 15:31:59,445  main  DEBUG: starting to save files . . .
+2020-04-19 15:31:59,445  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:31:59,601  main  INFO: took 0.15537285804748535 seconds to store data using pickle
+2020-04-19 15:31:59,611  main  INFO: 69414 words in the model from 135759 documents
+2020-04-19 15:31:59,611  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  1 min,  5 seconds to complete
+2020-04-19 15:31:59,611  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:32:02,197  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:32:20,668  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 18.47136163711548 seconds to load
+2020-04-19 15:32:20,668  main  INFO: 135759 docs loaded!
+2020-04-19 15:32:20,670  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-lsa-dim100-zeroone-stop
+2020-04-19 15:32:20,671  main  INFO: Options are: {'action': 'lsa', 'min_document_frequency': 2, 'stopwords': True, 'score': 'zeroone', 'svd_components': 100, 'truncate_matrix': 1000, 'output': None}
+2020-04-19 15:32:20,671  main  DEBUG: Starting to execute the action: lsa
+2020-04-19 15:33:06,679  main  INFO: term by doc matrix took 46.0081090927124 seconds
+2020-04-19 15:33:29,507  main  INFO: 	fit_transform took 22.820849180221558 seconds, u_sigma contains 27.765712 MB
+2020-04-19 15:33:29,507  main  INFO: 	performing lsa - np.dot(u_sigma (69414, 100), vt(100, 1000)) . . . svd = 100
+2020-04-19 15:33:29,684  main  INFO: 	lsa = np.dot(u_s,vt) operation took 0.17635297775268555 seconds and lsa contains 277.656112 MB
+2020-04-19 15:33:29,689  main  INFO: 	lsa matrix calculation TruncatedSVD finished.
+2020-04-19 15:33:29,689  main  INFO: 	SVD TruncatedSVD took 23.002790927886963 seconds
+2020-04-19 15:33:29,689  main  INFO: 	size (69414, 1000)
+2020-04-19 15:33:29,698  main  DEBUG: starting to save files . . .
+2020-04-19 15:33:29,698  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:33:30,033  main  INFO: took 0.33424806594848633 seconds to store data using pickle
+2020-04-19 15:33:30,047  main  INFO: 69414 words in the model from 135759 documents
+2020-04-19 15:33:30,047  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  1 min,  27 seconds to complete
+2020-04-19 15:33:30,047  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:33:32,730  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:33:49,712  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 16.98205804824829 seconds to load
+2020-04-19 15:33:49,712  main  INFO: 135759 docs loaded!
+2020-04-19 15:33:49,714  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-lsa-dim300-zeroone-stop
+2020-04-19 15:33:49,714  main  INFO: Options are: {'action': 'lsa', 'min_document_frequency': 2, 'stopwords': True, 'score': 'zeroone', 'svd_components': 300, 'truncate_matrix': 1000, 'output': None}
+2020-04-19 15:33:49,714  main  DEBUG: Starting to execute the action: lsa
+2020-04-19 15:34:36,853  main  INFO: term by doc matrix took 47.13869094848633 seconds
+2020-04-19 15:35:51,675  main  INFO: 	fit_transform took 74.81610012054443 seconds, u_sigma contains 83.296912 MB
+2020-04-19 15:35:51,675  main  INFO: 	performing lsa - np.dot(u_sigma (69414, 300), vt(300, 1000)) . . . svd = 300
+2020-04-19 15:35:51,982  main  INFO: 	lsa = np.dot(u_s,vt) operation took 0.30736207962036133 seconds and lsa contains 277.656112 MB
+2020-04-19 15:35:52,002  main  INFO: 	lsa matrix calculation TruncatedSVD finished.
+2020-04-19 15:35:52,002  main  INFO: 	SVD TruncatedSVD took 75.14381623268127 seconds
+2020-04-19 15:35:52,003  main  INFO: 	size (69414, 1000)
+2020-04-19 15:35:52,012  main  DEBUG: starting to save files . . .
+2020-04-19 15:35:52,013  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:35:52,350  main  INFO: took 0.3378419876098633 seconds to store data using pickle
+2020-04-19 15:35:52,367  main  INFO: 69414 words in the model from 135759 documents
+2020-04-19 15:35:52,367  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  2 min,  19 seconds to complete
+2020-04-19 15:35:52,367  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:35:54,123  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:36:12,235  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 18.11151909828186 seconds to load
+2020-04-19 15:36:12,236  main  INFO: 135759 docs loaded!
+2020-04-19 15:36:12,239  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-docbyterm-count-stop
+2020-04-19 15:36:12,239  main  INFO: Options are: {'action': 'docbyterm', 'min_document_frequency': 2, 'stopwords': True, 'score': 'count', 'svd_components': 100, 'truncate_matrix': None, 'output': None}
+2020-04-19 15:36:12,239  main  DEBUG: Starting to execute the action: docbyterm
+2020-04-19 15:37:01,851  main  INFO: term by doc matrix took 49.611510038375854 seconds
+2020-04-19 15:37:01,857  main  DEBUG: starting to save files . . .
+2020-04-19 15:37:01,857  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:37:02,011  main  INFO: took 0.15366506576538086 seconds to store data using pickle
+2020-04-19 15:37:02,021  main  INFO: 69414 words in the model from 135759 documents
+2020-04-19 15:37:02,021  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  1 min,  7 seconds to complete
+2020-04-19 15:37:02,021  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:37:04,641  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:37:22,165  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 17.523933172225952 seconds to load
+2020-04-19 15:37:22,166  main  INFO: 135759 docs loaded!
+2020-04-19 15:37:22,168  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-lsa-dim100-count-stop
+2020-04-19 15:37:22,168  main  INFO: Options are: {'action': 'lsa', 'min_document_frequency': 2, 'stopwords': True, 'score': 'count', 'svd_components': 100, 'truncate_matrix': 1000, 'output': None}
+2020-04-19 15:37:22,168  main  DEBUG: Starting to execute the action: lsa
+2020-04-19 15:38:09,818  main  INFO: term by doc matrix took 47.650047063827515 seconds
+2020-04-19 15:38:28,999  main  INFO: 	fit_transform took 19.17473578453064 seconds, u_sigma contains 27.765712 MB
+2020-04-19 15:38:28,999  main  INFO: 	performing lsa - np.dot(u_sigma (69414, 100), vt(100, 1000)) . . . svd = 100
+2020-04-19 15:38:29,201  main  INFO: 	lsa = np.dot(u_s,vt) operation took 0.2021808624267578 seconds and lsa contains 277.656112 MB
+2020-04-19 15:38:29,207  main  INFO: 	lsa matrix calculation TruncatedSVD finished.
+2020-04-19 15:38:29,207  main  INFO: 	SVD TruncatedSVD took 19.383317947387695 seconds
+2020-04-19 15:38:29,207  main  INFO: 	size (69414, 1000)
+2020-04-19 15:38:29,218  main  DEBUG: starting to save files . . .
+2020-04-19 15:38:29,218  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:38:29,553  main  INFO: took 0.33542490005493164 seconds to store data using pickle
+2020-04-19 15:38:29,570  main  INFO: 69414 words in the model from 135759 documents
+2020-04-19 15:38:29,570  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  1 min,  24 seconds to complete
+2020-04-19 15:38:29,570  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:38:32,095  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:38:50,053  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 17.957263708114624 seconds to load
+2020-04-19 15:38:50,053  main  INFO: 135759 docs loaded!
+2020-04-19 15:38:50,056  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-lsa-dim300-count-stop
+2020-04-19 15:38:50,056  main  INFO: Options are: {'action': 'lsa', 'min_document_frequency': 2, 'stopwords': True, 'score': 'count', 'svd_components': 300, 'truncate_matrix': 1000, 'output': None}
+2020-04-19 15:38:50,056  main  DEBUG: Starting to execute the action: lsa
+2020-04-19 15:39:39,856  main  INFO: term by doc matrix took 49.79952883720398 seconds
+2020-04-19 15:40:45,558  main  INFO: 	fit_transform took 65.69541311264038 seconds, u_sigma contains 83.296912 MB
+2020-04-19 15:40:45,558  main  INFO: 	performing lsa - np.dot(u_sigma (69414, 300), vt(300, 1000)) . . . svd = 300
+2020-04-19 15:40:45,805  main  INFO: 	lsa = np.dot(u_s,vt) operation took 0.24653100967407227 seconds and lsa contains 277.656112 MB
+2020-04-19 15:40:45,825  main  INFO: 	lsa matrix calculation TruncatedSVD finished.
+2020-04-19 15:40:45,825  main  INFO: 	SVD TruncatedSVD took 65.96226501464844 seconds
+2020-04-19 15:40:45,825  main  INFO: 	size (69414, 1000)
+2020-04-19 15:40:45,835  main  DEBUG: starting to save files . . .
+2020-04-19 15:40:45,835  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:40:46,165  main  INFO: took 0.32985997200012207 seconds to store data using pickle
+2020-04-19 15:40:46,180  main  INFO: 69414 words in the model from 135759 documents
+2020-04-19 15:40:46,180  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  2 min,  14 seconds to complete
+2020-04-19 15:40:46,180  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:40:48,901  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:41:07,526  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 18.624440908432007 seconds to load
+2020-04-19 15:41:07,527  main  INFO: 135759 docs loaded!
+2020-04-19 15:41:07,530  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-docbyterm-tfidf
+2020-04-19 15:41:07,530  main  INFO: Options are: {'action': 'docbyterm', 'min_document_frequency': 2, 'stopwords': False, 'score': 'tfidf', 'svd_components': 100, 'truncate_matrix': None, 'output': None}
+2020-04-19 15:41:07,530  main  DEBUG: Starting to execute the action: docbyterm
+2020-04-19 15:41:59,411  main  INFO: term by doc matrix took 51.880861043930054 seconds
+2020-04-19 15:41:59,430  main  DEBUG: starting to save files . . .
+2020-04-19 15:41:59,430  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:41:59,682  main  INFO: took 0.25150299072265625 seconds to store data using pickle
+2020-04-19 15:41:59,694  main  INFO: 69724 words in the model from 135759 documents
+2020-04-19 15:41:59,694  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  1 min,  10 seconds to complete
+2020-04-19 15:41:59,694  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:42:02,510  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:42:20,352  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 17.84159803390503 seconds to load
+2020-04-19 15:42:20,352  main  INFO: 135759 docs loaded!
+2020-04-19 15:42:20,354  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-lsa-dim100-tfidf
+2020-04-19 15:42:20,355  main  INFO: Options are: {'action': 'lsa', 'min_document_frequency': 2, 'stopwords': False, 'score': 'tfidf', 'svd_components': 100, 'truncate_matrix': 1000, 'output': None}
+2020-04-19 15:42:20,355  main  DEBUG: Starting to execute the action: lsa
+2020-04-19 15:43:12,547  main  INFO: term by doc matrix took 52.19187092781067 seconds
+2020-04-19 15:43:43,708  main  INFO: 	fit_transform took 31.143453121185303 seconds, u_sigma contains 27.889712 MB
+2020-04-19 15:43:43,709  main  INFO: 	performing lsa - np.dot(u_sigma (69724, 100), vt(100, 1000)) . . . svd = 100
+2020-04-19 15:43:43,887  main  INFO: 	lsa = np.dot(u_s,vt) operation took 0.1787097454071045 seconds and lsa contains 278.896112 MB
+2020-04-19 15:43:43,893  main  INFO: 	lsa matrix calculation TruncatedSVD finished.
+2020-04-19 15:43:43,893  main  INFO: 	SVD TruncatedSVD took 31.328288078308105 seconds
+2020-04-19 15:43:43,893  main  INFO: 	size (69724, 1000)
+2020-04-19 15:43:43,905  main  DEBUG: starting to save files . . .
+2020-04-19 15:43:43,905  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:43:44,245  main  INFO: took 0.33977818489074707 seconds to store data using pickle
+2020-04-19 15:43:44,260  main  INFO: 69724 words in the model from 135759 documents
+2020-04-19 15:43:44,260  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  1 min,  41 seconds to complete
+2020-04-19 15:43:44,260  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:43:46,772  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:44:04,918  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 18.14623212814331 seconds to load
+2020-04-19 15:44:04,918  main  INFO: 135759 docs loaded!
+2020-04-19 15:44:04,922  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-lsa-dim300-tfidf
+2020-04-19 15:44:04,922  main  INFO: Options are: {'action': 'lsa', 'min_document_frequency': 2, 'stopwords': False, 'score': 'tfidf', 'svd_components': 300, 'truncate_matrix': 1000, 'output': None}
+2020-04-19 15:44:04,922  main  DEBUG: Starting to execute the action: lsa
+2020-04-19 15:44:57,350  main  INFO: term by doc matrix took 52.42791724205017 seconds
+2020-04-19 15:46:27,013  main  INFO: 	fit_transform took 89.64282512664795 seconds, u_sigma contains 83.668912 MB
+2020-04-19 15:46:27,013  main  INFO: 	performing lsa - np.dot(u_sigma (69724, 300), vt(300, 1000)) . . . svd = 300
+2020-04-19 15:46:27,274  main  INFO: 	lsa = np.dot(u_s,vt) operation took 0.26048898696899414 seconds and lsa contains 278.896112 MB
+2020-04-19 15:46:27,294  main  INFO: 	lsa matrix calculation TruncatedSVD finished.
+2020-04-19 15:46:27,294  main  INFO: 	SVD TruncatedSVD took 89.92376661300659 seconds
+2020-04-19 15:46:27,294  main  INFO: 	size (69724, 1000)
+2020-04-19 15:46:27,307  main  DEBUG: starting to save files . . .
+2020-04-19 15:46:27,308  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:46:27,640  main  INFO: took 0.3320910930633545 seconds to store data using pickle
+2020-04-19 15:46:27,655  main  INFO: 69724 words in the model from 135759 documents
+2020-04-19 15:46:27,655  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  2 min,  40 seconds to complete
+2020-04-19 15:46:27,655  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:46:30,363  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:46:48,986  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 18.621968984603882 seconds to load
+2020-04-19 15:46:48,986  main  INFO: 135759 docs loaded!
+2020-04-19 15:46:48,990  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-docbyterm-zeroone
+2020-04-19 15:46:48,990  main  INFO: Options are: {'action': 'docbyterm', 'min_document_frequency': 2, 'stopwords': False, 'score': 'zeroone', 'svd_components': 100, 'truncate_matrix': None, 'output': None}
+2020-04-19 15:46:48,990  main  DEBUG: Starting to execute the action: docbyterm
+2020-04-19 15:47:39,826  main  INFO: term by doc matrix took 50.83596324920654 seconds
+2020-04-19 15:47:39,831  main  DEBUG: starting to save files . . .
+2020-04-19 15:47:39,832  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:47:40,024  main  INFO: took 0.19258975982666016 seconds to store data using pickle
+2020-04-19 15:47:40,038  main  INFO: 69724 words in the model from 135759 documents
+2020-04-19 15:47:40,038  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  1 min,  9 seconds to complete
+2020-04-19 15:47:40,038  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:47:42,592  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:47:59,791  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 17.19889783859253 seconds to load
+2020-04-19 15:47:59,791  main  INFO: 135759 docs loaded!
+2020-04-19 15:47:59,794  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-lsa-dim100-zeroone
+2020-04-19 15:47:59,794  main  INFO: Options are: {'action': 'lsa', 'min_document_frequency': 2, 'stopwords': False, 'score': 'zeroone', 'svd_components': 100, 'truncate_matrix': 1000, 'output': None}
+2020-04-19 15:47:59,794  main  DEBUG: Starting to execute the action: lsa
+2020-04-19 15:48:50,755  main  INFO: term by doc matrix took 50.96136999130249 seconds
+2020-04-19 15:49:27,960  main  INFO: 	fit_transform took 37.19734501838684 seconds, u_sigma contains 27.889712 MB
+2020-04-19 15:49:27,960  main  INFO: 	performing lsa - np.dot(u_sigma (69724, 100), vt(100, 1000)) . . . svd = 100
+2020-04-19 15:49:28,146  main  INFO: 	lsa = np.dot(u_s,vt) operation took 0.18562626838684082 seconds and lsa contains 278.896112 MB
+2020-04-19 15:49:28,152  main  INFO: 	lsa matrix calculation TruncatedSVD finished.
+2020-04-19 15:49:28,152  main  INFO: 	SVD TruncatedSVD took 37.38927412033081 seconds
+2020-04-19 15:49:28,152  main  INFO: 	size (69724, 1000)
+2020-04-19 15:49:28,166  main  DEBUG: starting to save files . . .
+2020-04-19 15:49:28,166  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:49:28,501  main  INFO: took 0.3346750736236572 seconds to store data using pickle
+2020-04-19 15:49:28,517  main  INFO: 69724 words in the model from 135759 documents
+2020-04-19 15:49:28,518  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  1 min,  45 seconds to complete
+2020-04-19 15:49:28,518  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:49:30,778  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:49:48,720  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 17.94200325012207 seconds to load
+2020-04-19 15:49:48,721  main  INFO: 135759 docs loaded!
+2020-04-19 15:49:48,723  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-lsa-dim300-zeroone
+2020-04-19 15:49:48,724  main  INFO: Options are: {'action': 'lsa', 'min_document_frequency': 2, 'stopwords': False, 'score': 'zeroone', 'svd_components': 300, 'truncate_matrix': 1000, 'output': None}
+2020-04-19 15:49:48,724  main  DEBUG: Starting to execute the action: lsa
+2020-04-19 15:50:40,752  main  INFO: term by doc matrix took 52.02810502052307 seconds
+2020-04-19 15:52:10,823  main  INFO: 	fit_transform took 90.06585502624512 seconds, u_sigma contains 83.668912 MB
+2020-04-19 15:52:10,823  main  INFO: 	performing lsa - np.dot(u_sigma (69724, 300), vt(300, 1000)) . . . svd = 300
+2020-04-19 15:52:11,079  main  INFO: 	lsa = np.dot(u_s,vt) operation took 0.2555668354034424 seconds and lsa contains 278.896112 MB
+2020-04-19 15:52:11,099  main  INFO: 	lsa matrix calculation TruncatedSVD finished.
+2020-04-19 15:52:11,099  main  INFO: 	SVD TruncatedSVD took 90.34159803390503 seconds
+2020-04-19 15:52:11,099  main  INFO: 	size (69724, 1000)
+2020-04-19 15:52:11,112  main  DEBUG: starting to save files . . .
+2020-04-19 15:52:11,112  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:52:11,445  main  INFO: took 0.3326399326324463 seconds to store data using pickle
+2020-04-19 15:52:11,460  main  INFO: 69724 words in the model from 135759 documents
+2020-04-19 15:52:11,460  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  2 min,  40 seconds to complete
+2020-04-19 15:52:11,460  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:52:13,954  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:52:31,710  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 17.75579285621643 seconds to load
+2020-04-19 15:52:31,712  main  INFO: 135759 docs loaded!
+2020-04-19 15:52:31,716  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-docbyterm-count
+2020-04-19 15:52:31,716  main  INFO: Options are: {'action': 'docbyterm', 'min_document_frequency': 2, 'stopwords': False, 'score': 'count', 'svd_components': 100, 'truncate_matrix': None, 'output': None}
+2020-04-19 15:52:31,716  main  DEBUG: Starting to execute the action: docbyterm
+2020-04-19 15:53:22,781  main  INFO: term by doc matrix took 51.065168142318726 seconds
+2020-04-19 15:53:22,788  main  DEBUG: starting to save files . . .
+2020-04-19 15:53:22,788  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:53:22,986  main  INFO: took 0.19757628440856934 seconds to store data using pickle
+2020-04-19 15:53:23,002  main  INFO: 69724 words in the model from 135759 documents
+2020-04-19 15:53:23,002  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  1 min,  9 seconds to complete
+2020-04-19 15:53:23,002  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:53:25,414  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:53:43,857  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 18.442413091659546 seconds to load
+2020-04-19 15:53:43,858  main  INFO: 135759 docs loaded!
+2020-04-19 15:53:43,860  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-lsa-dim100-count
+2020-04-19 15:53:43,860  main  INFO: Options are: {'action': 'lsa', 'min_document_frequency': 2, 'stopwords': False, 'score': 'count', 'svd_components': 100, 'truncate_matrix': 1000, 'output': None}
+2020-04-19 15:53:43,860  main  DEBUG: Starting to execute the action: lsa
+2020-04-19 15:54:36,744  main  INFO: term by doc matrix took 52.88364911079407 seconds
+2020-04-19 15:55:03,484  main  INFO: 	fit_transform took 26.733947038650513 seconds, u_sigma contains 27.889712 MB
+2020-04-19 15:55:03,485  main  INFO: 	performing lsa - np.dot(u_sigma (69724, 100), vt(100, 1000)) . . . svd = 100
+2020-04-19 15:55:03,660  main  INFO: 	lsa = np.dot(u_s,vt) operation took 0.17491984367370605 seconds and lsa contains 278.896112 MB
+2020-04-19 15:55:03,665  main  INFO: 	lsa matrix calculation TruncatedSVD finished.
+2020-04-19 15:55:03,665  main  INFO: 	SVD TruncatedSVD took 26.914797067642212 seconds
+2020-04-19 15:55:03,665  main  INFO: 	size (69724, 1000)
+2020-04-19 15:55:03,678  main  DEBUG: starting to save files . . .
+2020-04-19 15:55:03,679  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:55:04,012  main  INFO: took 0.3335130214691162 seconds to store data using pickle
+2020-04-19 15:55:04,027  main  INFO: 69724 words in the model from 135759 documents
+2020-04-19 15:55:04,028  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  1 min,  38 seconds to complete
+2020-04-19 15:55:04,028  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!
+2020-04-19 15:55:07,044  main  DEBUG: 
+************************ LOADING CORPUS . . .
+2020-04-19 15:55:24,902  main  INFO: . . . all_senate_speeches loaded, it took 0.0d 0.0h 0.0m 17.857560873031616 seconds to load
+2020-04-19 15:55:24,902  main  INFO: 135759 docs loaded!
+2020-04-19 15:55:24,904  main  INFO: Filename: all_senate_speeches/all_senate_speeches-min_df_2-lsa-dim300-count
+2020-04-19 15:55:24,905  main  INFO: Options are: {'action': 'lsa', 'min_document_frequency': 2, 'stopwords': False, 'score': 'count', 'svd_components': 300, 'truncate_matrix': 1000, 'output': None}
+2020-04-19 15:55:24,905  main  DEBUG: Starting to execute the action: lsa
+2020-04-19 15:56:14,291  main  INFO: term by doc matrix took 49.38632822036743 seconds
+2020-04-19 15:59:22,660  main  INFO: 	fit_transform took 188.3615951538086 seconds, u_sigma contains 83.668912 MB
+2020-04-19 15:59:22,660  main  INFO: 	performing lsa - np.dot(u_sigma (69724, 300), vt(300, 1000)) . . . svd = 300
+2020-04-19 15:59:22,910  main  INFO: 	lsa = np.dot(u_s,vt) operation took 0.24944186210632324 seconds and lsa contains 278.896112 MB
+2020-04-19 15:59:22,928  main  INFO: 	lsa matrix calculation TruncatedSVD finished.
+2020-04-19 15:59:22,928  main  INFO: 	SVD TruncatedSVD took 188.6295039653778 seconds
+2020-04-19 15:59:22,928  main  INFO: 	size (69724, 1000)
+2020-04-19 15:59:22,945  main  DEBUG: starting to save files . . .
+2020-04-19 15:59:22,945  main  INFO: Saving the ndarray using pickle . . . Saving json information to a file . . .
+2020-04-19 15:59:23,281  main  INFO: took 0.33600711822509766 seconds to store data using pickle
+2020-04-19 15:59:23,298  main  INFO: 69724 words in the model from 135759 documents
+2020-04-19 15:59:23,298  main  INFO: ALL_SENATE_SPEECHES took 0 day,  0 hr,  4 min,  16 seconds to complete
+2020-04-19 15:59:23,298  main  INFO: ALL_SENATE_SPEECHES
+************************ . . . MODEL GENERATION COMPLETED!

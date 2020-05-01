@@ -1,0 +1,8 @@
+#!/bin/bash
+# Installs the dependencies of the project
+
+# all senate speeches file found here: https://www.dropbox.com/s/rbhpy3qtr5oudr2/all-senate-speeches.txt?dl=0
+echo "Download the file from https://www.dropbox.com/s/rbhpy3qtr5oudr2/all-senate-speeches.txt?dl=0 and replace this one with it." > ../corpus/all-senate-speeches.txt
+
+# install all dependencies using pip (no environment)
+pip install -r requirements.txt
