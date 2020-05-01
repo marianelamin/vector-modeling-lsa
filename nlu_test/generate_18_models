@@ -1,0 +1,40 @@
+#!/bin/bash
+# Generates the 18 models for two-text-comparison
+
+echo "(1/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=docbyterm                             --score=tfidf    -s  -min_df=2;
+echo "(2/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=lsa        -svd_c=100  -truncate=1000  --score=tfidf    -s  -min_df=2;
+echo "(3/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=lsa        -svd_c=300  -truncate=1000  --score=tfidf    -s  -min_df=2;
+echo "(4/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=docbyterm                             --score=zeroone  -s  -min_df=2;
+echo "(5/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=lsa        -svd_c=100  -truncate=1000  --score=zeroone  -s  -min_df=2;
+echo "(6/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=lsa        -svd_c=300  -truncate=1000  --score=zeroone  -s  -min_df=2;
+echo "(7/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=docbyterm                             --score=count    -s  -min_df=2;
+echo "(8/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=lsa        -svd_c=100  -truncate=1000  --score=count    -s  -min_df=2;
+echo "(9/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=lsa        -svd_c=300  -truncate=1000  --score=count    -s  -min_df=2;
+echo "(10/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=docbyterm                             --score=tfidf        -min_df=2;
+echo "(11/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=lsa        -svd_c=100  -truncate=1000  --score=tfidf        -min_df=2;
+echo "(12/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=lsa        -svd_c=300  -truncate=1000  --score=tfidf        -min_df=2;
+echo "(13/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=docbyterm                             --score=zeroone      -min_df=2;
+echo "(14/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=lsa        -svd_c=100  -truncate=1000  --score=zeroone      -min_df=2;
+echo "(15/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=lsa        -svd_c=300  -truncate=1000  --score=zeroone      -min_df=2;
+echo "(16/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=docbyterm                             --score=count        -min_df=2;
+echo "(17/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=lsa        -svd_c=100  -truncate=1000  --score=count        -min_df=2;
+echo "(18/18) Generating Model";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_model_generator.py --action=lsa        -svd_c=300  -truncate=1000  --score=count        -min_df=2;
+echo "Please check the log file in the logs folder for more details on the executions . . .";

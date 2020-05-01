@@ -1,0 +1,6 @@
+#!/bin/bash
+# Evaluates each omdel by comparing the machine ranking vs human ranking
+
+echo "Evaluating how well was the machine ranking. . .";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_evaluate_models.py --machine_ranking_dir = 'apply_model_df_2' --human_ranking_dir='amt_results'
+echo "Please check the folder ending in _eval for more details on the results . . .";

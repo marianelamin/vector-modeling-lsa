@@ -1,0 +1,6 @@
+#!/bin/bash
+# Generate machine ranking results
+
+echo "Applying models to the test data set";
+~/.conda/envs/dialogue_system/bin/python3.7 Demo_apply_models.py  --models='all-senate-speeches-min_df_2' --test='Question-Answer/qa' --out='apply_model_df_2'
+echo "Please check the read.log file in the logs folder for more details on the executions . . .";
