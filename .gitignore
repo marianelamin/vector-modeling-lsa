@@ -11,7 +11,9 @@ nlu_helper/resources/all-senate-speeches/*
 nlu_helper/resources/*.json
 nlu_helper/resources/*.pkl
 
-nlu_test/nlu_module_folder/*
+nlu_test/nlu_module_folder
+nlu_test/tests for name
+nlu_test/wrongNumbers.py
 
 # all temporary or environment-specific files
 __pycache__/*
