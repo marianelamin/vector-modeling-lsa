@@ -13,7 +13,7 @@ from nltk.corpus import state_union
 from nltk.corpus import movie_reviews
 from nltk.corpus import twitter_samples
 
-# Select the correct corpora to load, looks at datasets from nltk.corpora
+# Select the correct corpus to load, looks at datasets from nltk.corpus
 #  source: http://www.nltk.org/nltk_data/
 #  with numbers:
 #  23: id=movie_reviews
@@ -123,7 +123,7 @@ class Corpus_all_senate_speeches:
         self.number_id = -3
         self.source_id = "all_senate_speeches"
         filepath = os.path.join(os.path.dirname(__file__),
-                                'corpora',
+                                'corpus',
                                 'all-senate-speeches.txt')
 
         # This is the entire corpus

@@ -11,17 +11,31 @@ The generation of a new model is a module totally separate from the Dialogue sys
     $ cd dialogue_system
    ```
 ### System Setup to Generate a new Model 
-1. Install all dependencies/libraries that python needs to generate a model, if you did not do this before.
+1. Create three folders in the nlu_helper module.
+   
+   `** This may be deleted if I am able to create these folders and save them on the repo while they are empty.`
+    ``` 
+    $ mkdir nlu_helper/logs
+    $ mkdir nlu_helper/resources
+    $ mkdir nlu_helper/corpora
+    ``` 
+2. Install all dependencies/libraries that python needs to generate a model, if you did not do this before.
     See set up on [README.md](https://github.com/emcdona1/dialogue_system/blob/master/README.md) on root folder. 
 
-2. Make sure to have the [all-senate-speech.txt](https://www.dropbox.com/s/rbhpy3qtr5oudr2/all-senate-speeches.txt?dl=0) file in the ```corpus``` folder
+3. Make sure to have the [all-senate-speech.txt](https://www.dropbox.com/s/rbhpy3qtr5oudr2/all-senate-speeches.txt?dl=0) file in the ```corpora``` folder
    
+##### Alternatively
+1. I have created a script that will do these tasks (except download the all-senate-speeches.txt).  In order to use it, navigate to the configuration folder and run the following command
 
+    ```
+    $ cd nlu_helper/configuration
+    $ ./setupEnvironment
+    ```
 
 ### Generate a Model
 Once you completed all setup steps.  In your CLI, the help command will show you how to use the script to generate the model you need:
  ```
-$ python nlu_test/demo_model_generator.py -h 
+$ python nlu_helper/model_generator.py -h 
  ```
 ```
 usage: Demo_model_generator.py [-h] [--action {lsa,docbyterm}]
@@ -70,11 +84,11 @@ optional arguments:
 Once the model is generated, it is stored in a file with extension ```.pkl```.  A second file is created with same name but extension ```.json```.
 This last file will contain human readable configuration and other information related to the model generation.
 
-Results will be found : ```dialogue_system/nlu_helper/resources/all_senate_speches/```
+Results will be found : ```/dialogue_system/nlu_helper/resources```
 
 ### Generate 18 different models with a script
 There is an example, which is a script I used to generate all 18 possible models.
-Please have a look at ```generate_18_models``` script.
+Please have a look at [```generate_18_models``` script](https://github.com/marianelamin/vector-modeling-lsa/blob/master/nlu_test/generate_18_models).
 You might need to specify instead of using a conda environment, use the one you desire. So you will have to replace 
 ``` ~/.conda/envs/dialogue_system/bin/python3.7 ``` by ```python``` or ```python3```.
 
@@ -87,5 +101,5 @@ $ ./generate_18_models
 
 
 ## LOADING AND USING A MODEL
-to be defined . . . 
+Have a look at [this notebook](https://github.com/marianelamin/vector-modeling-lsa/blob/master/similarity_model.ipynb) in google colab.
 
