@@ -1,2 +1,22 @@
 #all mac hidden files
 *.DS_Store
+
+
+# all extraneous corpus
+nlu_helper/corpus/20_newsgroups/*
+nlu_helper/corpus/all-senate-speeches.txt
+# all other models that are generated and saved for later read_model use
+nlu_helper/resources/all-senate-speeches/*
+# all other models that are generated
+nlu_helper/resources/*.json
+nlu_helper/resources/*.pkl
+
+# all temporary or environment-specific files
+__pycache__/*
+_pycache_/*
+.idea/*
+*.pyc
+venv/*
+Scripts/*
+Lib/*
+Include/*
