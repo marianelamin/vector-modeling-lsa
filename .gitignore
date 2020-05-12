@@ -11,6 +11,8 @@ nlu_helper/resources/all-senate-speeches/*
 nlu_helper/resources/*.json
 nlu_helper/resources/*.pkl
 
+nlu_test/nlu_module_folder/*
+
 # all temporary or environment-specific files
 __pycache__/*
 _pycache_/*
