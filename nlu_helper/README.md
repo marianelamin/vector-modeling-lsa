@@ -4,25 +4,25 @@ The generation of a new model is a module totally separate from the Dialogue sys
 
 * Clone the repository 
     ```
-   $ git clone https://github.com/emcdona1/dialogue_system.git
+   $ git clone https://github.com/marianelamin/vector-modeling-lsa.git
    ```
 * Move to the main folder
     ```
-    $ cd dialogue_system
+    $ cd vector-modeling-lsa
    ```
 ### System Setup to Generate a new Model 
-1. Create three folders in the nlu_helper module.
+1. Make sur to have these folders. If not there, create them in the nlu_helper module.
    
    `** This may be deleted if I am able to create these folders and save them on the repo while they are empty.`
     ``` 
     $ mkdir nlu_helper/logs
     $ mkdir nlu_helper/resources
-    $ mkdir nlu_helper/corpora
+    $ mkdir nlu_helper/corpus
     ``` 
 2. Install all dependencies/libraries that python needs to generate a model, if you did not do this before.
-    See set up on [README.md](https://github.com/emcdona1/dialogue_system/blob/master/README.md) on root folder. 
+    See [requirements](https://github.com/marianelamin/vector-modeling-lsa/tree/master/nlu_helper/configuration) for python libraries. 
 
-3. Make sure to have the [all-senate-speech.txt](https://www.dropbox.com/s/rbhpy3qtr5oudr2/all-senate-speeches.txt?dl=0) file in the ```corpora``` folder
+3. Make sure to have the [all-senate-speech.txt](https://www.dropbox.com/s/rbhpy3qtr5oudr2/all-senate-speeches.txt?dl=0) file in the ```corpus``` folder
    
 ##### Alternatively
 1. I have created a script that will do these tasks (except download the all-senate-speeches.txt).  In order to use it, navigate to the configuration folder and run the following command
@@ -84,13 +84,13 @@ optional arguments:
 Once the model is generated, it is stored in a file with extension ```.pkl```.  A second file is created with same name but extension ```.json```.
 This last file will contain human readable configuration and other information related to the model generation.
 
-Results will be found : ```/dialogue_system/nlu_helper/resources```
+Results will be found : ```/vector-modeling-lsa/nlu_helper/resources```
 
 ### Generate 18 different models with a script
 There is an example, which is a script I used to generate all 18 possible models.
 Please have a look at [```generate_18_models``` script](https://github.com/marianelamin/vector-modeling-lsa/blob/master/nlu_test/generate_18_models).
 You might need to specify instead of using a conda environment, use the one you desire. So you will have to replace 
-``` ~/.conda/envs/dialogue_system/bin/python3.7 ``` by ```python``` or ```python3```.
+``` ~/.conda/envs/vector-modeling-lsa/bin/python3.7 ``` by ```python``` or ```python3```.
 
 Once you've edited the script, you can run it by executing:
 ```
